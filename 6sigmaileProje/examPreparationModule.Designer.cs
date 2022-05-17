@@ -129,7 +129,7 @@ namespace _6sigmaileProje
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(765, 637);
+            this.guna2Panel1.Size = new System.Drawing.Size(765, 853);
             this.guna2Panel1.TabIndex = 5;
             // 
             // rTextboxImageFilePath
@@ -381,7 +381,7 @@ namespace _6sigmaileProje
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
-            this.ClientSize = new System.Drawing.Size(1491, 637);
+            this.ClientSize = new System.Drawing.Size(1608, 853);
             this.ControlBox = false;
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.label10);

@@ -595,7 +595,7 @@ namespace _6sigmaileProje
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
-            this.ClientSize = new System.Drawing.Size(1608, 762);
+            this.ClientSize = new System.Drawing.Size(1608, 853);
             this.ControlBox = false;
             this.Controls.Add(this.txtbxTitleQuestion);
             this.Controls.Add(this.label1);
