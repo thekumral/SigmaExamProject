@@ -53,5 +53,7 @@ namespace _6sigmaileProje
             log.Show();
             this.Hide();
         }
+
+        
     }
 }
