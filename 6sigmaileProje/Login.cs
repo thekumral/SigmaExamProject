@@ -62,5 +62,7 @@ namespace _6sigmaileProje
         {
             Application.Exit();
         }
+
+       
     }
 }

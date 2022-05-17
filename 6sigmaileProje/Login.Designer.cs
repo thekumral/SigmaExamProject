@@ -69,6 +69,7 @@ namespace _6sigmaileProje
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            
             // 
             // txtUserName
             // 
@@ -159,7 +160,7 @@ namespace _6sigmaileProje
             this.lblForgetPassword.ForeColor = System.Drawing.Color.White;
             this.lblForgetPassword.Location = new System.Drawing.Point(90, 381);
             this.lblForgetPassword.Name = "lblForgetPassword";
-            this.lblForgetPassword.Size = new System.Drawing.Size(107, 17);
+            this.lblForgetPassword.Size = new System.Drawing.Size(106, 16);
             this.lblForgetPassword.TabIndex = 8;
             this.lblForgetPassword.Text = "Forgot Password";
             this.lblForgetPassword.Click += new System.EventHandler(this.lblForgetPassword_Click);
