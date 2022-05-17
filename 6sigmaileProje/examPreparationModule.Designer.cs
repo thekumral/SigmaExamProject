@@ -88,7 +88,7 @@ namespace _6sigmaileProje
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 30);
+            this.label1.Size = new System.Drawing.Size(250, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Exam Preparation Module";
             // 
@@ -98,7 +98,7 @@ namespace _6sigmaileProje
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(19, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 21);
+            this.label2.Size = new System.Drawing.Size(160, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Title For The Question";
             // 
@@ -125,7 +125,7 @@ namespace _6sigmaileProje
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(742, 637);
+            this.guna2Panel1.Size = new System.Drawing.Size(742, 853);
             this.guna2Panel1.TabIndex = 5;
             // 
             // rTextboxImageFilePath
@@ -142,7 +142,7 @@ namespace _6sigmaileProje
             this.pathImage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.pathImage.Location = new System.Drawing.Point(71, 430);
             this.pathImage.Name = "pathImage";
-            this.pathImage.Size = new System.Drawing.Size(64, 20);
+            this.pathImage.Size = new System.Drawing.Size(65, 17);
             this.pathImage.TabIndex = 17;
             this.pathImage.Text = "File Path";
             // 
@@ -171,7 +171,7 @@ namespace _6sigmaileProje
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(51, 272);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 21);
+            this.label4.Size = new System.Drawing.Size(98, 18);
             this.label4.TabIndex = 6;
             this.label4.Text = "Add Pictures";
             // 
@@ -192,7 +192,7 @@ namespace _6sigmaileProje
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(3, 523);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 21);
+            this.label3.Size = new System.Drawing.Size(178, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "Main Question Sentence";
             // 
@@ -206,7 +206,7 @@ namespace _6sigmaileProje
             this.lblAnswerChoices.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerChoices.Location = new System.Drawing.Point(1056, 141);
             this.lblAnswerChoices.Name = "lblAnswerChoices";
-            this.lblAnswerChoices.Size = new System.Drawing.Size(120, 21);
+            this.lblAnswerChoices.Size = new System.Drawing.Size(122, 18);
             this.lblAnswerChoices.TabIndex = 6;
             this.lblAnswerChoices.Text = "Answer Choices";
             // 
@@ -224,7 +224,7 @@ namespace _6sigmaileProje
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(1052, 205);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 21);
+            this.label5.Size = new System.Drawing.Size(29, 18);
             this.label5.TabIndex = 8;
             this.label5.Text = "A-)";
             // 
@@ -234,7 +234,7 @@ namespace _6sigmaileProje
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.Location = new System.Drawing.Point(1052, 302);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 21);
+            this.label6.Size = new System.Drawing.Size(29, 18);
             this.label6.TabIndex = 10;
             this.label6.Text = "B-)";
             // 
@@ -252,7 +252,7 @@ namespace _6sigmaileProje
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.Location = new System.Drawing.Point(1052, 391);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 21);
+            this.label7.Size = new System.Drawing.Size(30, 18);
             this.label7.TabIndex = 12;
             this.label7.Text = "C-)";
             // 
@@ -270,7 +270,7 @@ namespace _6sigmaileProje
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.Location = new System.Drawing.Point(1052, 487);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 21);
+            this.label8.Size = new System.Drawing.Size(30, 18);
             this.label8.TabIndex = 14;
             this.label8.Text = "D-)";
             // 
@@ -307,7 +307,7 @@ namespace _6sigmaileProje
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.Location = new System.Drawing.Point(1071, 552);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 21);
+            this.label9.Size = new System.Drawing.Size(93, 18);
             this.label9.TabIndex = 16;
             this.label9.Text = "True Answer";
             // 
@@ -341,7 +341,7 @@ namespace _6sigmaileProje
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.Location = new System.Drawing.Point(795, 558);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 17);
+            this.label10.Size = new System.Drawing.Size(87, 16);
             this.label10.TabIndex = 40;
             this.label10.Text = "Question Unit";
             // 
@@ -374,7 +374,7 @@ namespace _6sigmaileProje
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1491, 637);
+            this.ClientSize = new System.Drawing.Size(1608, 853);
             this.ControlBox = false;
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.label10);

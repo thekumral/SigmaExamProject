@@ -56,11 +56,11 @@ namespace _6sigmaileProje
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(238)))), ((int)(((byte)(233)))));
-            this.lblWelcome.Location = new System.Drawing.Point(150, 79);
+            this.lblWelcome.Location = new System.Drawing.Point(235, 201);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(725, 36);
+            this.lblWelcome.Size = new System.Drawing.Size(865, 42);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome to the 6Sigma exam prepation software";
             // 
@@ -73,14 +73,13 @@ namespace _6sigmaileProje
             this.btnReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
-            this.btnReport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(238)))), ((int)(((byte)(233)))));
-            this.btnReport.Location = new System.Drawing.Point(325, 284);
+            this.btnReport.Location = new System.Drawing.Point(453, 414);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(365, 64);
+            this.btnReport.Size = new System.Drawing.Size(390, 76);
             this.btnReport.TabIndex = 1;
             this.btnReport.Text = "Show report";
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnGoExamModule
             // 
@@ -91,11 +90,11 @@ namespace _6sigmaileProje
             this.btnGoExamModule.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGoExamModule.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGoExamModule.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
-            this.btnGoExamModule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGoExamModule.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGoExamModule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(238)))), ((int)(((byte)(233)))));
-            this.btnGoExamModule.Location = new System.Drawing.Point(325, 194);
+            this.btnGoExamModule.Location = new System.Drawing.Point(453, 324);
             this.btnGoExamModule.Name = "btnGoExamModule";
-            this.btnGoExamModule.Size = new System.Drawing.Size(365, 64);
+            this.btnGoExamModule.Size = new System.Drawing.Size(390, 76);
             this.btnGoExamModule.TabIndex = 2;
             this.btnGoExamModule.Text = "Go To Exam Module";
             this.btnGoExamModule.Click += new System.EventHandler(this.btnGoExamModule_Click);
@@ -105,26 +104,25 @@ namespace _6sigmaileProje
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, -1);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(104, 577);
+            this.guna2Panel1.Size = new System.Drawing.Size(104, 853);
             this.guna2Panel1.TabIndex = 3;
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(914, -1);
+            this.guna2Panel2.Location = new System.Drawing.Point(1175, -1);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(104, 577);
+            this.guna2Panel2.Size = new System.Drawing.Size(104, 853);
             this.guna2Panel2.TabIndex = 4;
-            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BorderRadius = 15;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(110, 383);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(110, 552);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(225, 193);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(320, 303);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
@@ -134,7 +132,7 @@ namespace _6sigmaileProje
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
-            this.ClientSize = new System.Drawing.Size(1019, 577);
+            this.ClientSize = new System.Drawing.Size(1280, 853);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.guna2Panel2);
