@@ -31,13 +31,16 @@ namespace _6sigmaileProje
         private void btnStart_Click(object sender, EventArgs e)
         {
             int questionEqueueNumber = Convert.ToInt32(lblQuestionEqueNumber.Text);
-            //Random olarak bir diziye değer atama fonksiyonu
+            //Soru belirleme sınıfından Random olarak bir diziye değer atama fonksiyonu
             setAQuestion.questionSetRandom(questionEqueu);
+            //Soru Yazma sınıfından Sql ile yazdırma fonksiyonu
             qWrite.questionsWrite(questionEqueu,questionEqueueNumber,lblQuestionNumber, txtbxTitleQuestion, txtbxImagePath, txtbxMainQuestionSentence, txtAnswerA, txtAnswerB, txtAnswerC, txtAnswerD, lblTureAnswer, pictureBoxExamModule);
+           
             pictureBoxExamModule.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxExamModule.ImageLocation = txtbxImagePath.Text;
+            
+            //lblQuestionEqueNumber.Text = (Convert.ToInt32(lblQuestionEqueNumber.Text) + 1).ToString();
             btnStart.Visible = false;
-            lblQuestionEqueNumber.Text = (Convert.ToInt32(lblQuestionEqueNumber.Text) + 1).ToString();
             timer.Start();
         }
 
@@ -55,11 +58,13 @@ namespace _6sigmaileProje
         private void btnAccept_Click(object sender, EventArgs e)
         {
             int questionEqueueNumber = Convert.ToInt32(lblQuestionEqueNumber.Text);
-            //questionCheckControl checkControl = new questionCheckControl();
-            checkControl.AnswerControl(panelRightChoose,panelWrongChoose,lblChooseAnswer,lblTureAnswer,txtAnswerA,txtAnswerB,txtAnswerC,txtAnswerD,panelAnswerA,panelAnswerB,panelAnswerC,panelAnswerD);
+            //Kontrol sınıfından cevap kontrol fonksiyonu 
+            checkControl.AnswerControl(panelRightChoose, panelWrongChoose, lblChooseAnswer, lblTureAnswer);
+            //Kontrol sınıfından soru doğruluğunu kontrol etme fonksiyonu
             checkControl.questionAddTrue(questionEqueu,questionEqueueNumber,lblTureAnswer,lblChooseAnswer);
-            //_6Rule rule6 = new _6Rule();
+            //Kural sınıfından soruların 6 sigma prensibine göre gelme fonksiyonu 
             rule6.questionAddTrue(questionEqueu, questionEqueueNumber, lblTureAnswer, lblChooseAnswer);
+            //Click olayi ile panel renklerini ayarlama fonksiyonu
             panelBackColor();
         }
         private void panelAnswerA_Click(object sender, EventArgs e)
@@ -88,19 +93,22 @@ namespace _6sigmaileProje
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            int questionEqueueNumber = Convert.ToInt32(lblQuestionEqueNumber.Text);
-            //questionCheckControl qCheckControl = new questionCheckControl();
-            //questionWrite qWrite = new questionWrite();
-            checkControl.AnswerControl(panelRightChoose, panelWrongChoose, lblChooseAnswer, lblTureAnswer, txtAnswerA, txtAnswerB, txtAnswerC, txtAnswerD, panelAnswerA, panelAnswerB, panelAnswerC, panelAnswerD);
-            checkControl.questionAddTrue(questionEqueu, questionEqueueNumber, lblTureAnswer, lblChooseAnswer);
+
             lblQuestionEqueNumber.Text= (Convert.ToInt32(lblQuestionEqueNumber.Text) + 1).ToString();
+
+            int questionEqueueNumber = Convert.ToInt32(lblQuestionEqueNumber.Text);
+            finishExam(questionEqueueNumber);
+            //Soru yazma sınıfından forma soru yazma fonskiyonu
             qWrite.questionsWrite(questionEqueu,questionEqueueNumber,lblQuestionNumber, txtbxTitleQuestion, txtbxImagePath, txtbxMainQuestionSentence, txtAnswerA, txtAnswerB, txtAnswerC, txtAnswerD, lblTureAnswer, pictureBoxExamModule);
+            
             pictureBoxExamModule.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxExamModule.ImageLocation = txtbxImagePath.Text;
+            //formda gösterdiğimiz doğru-yanlış cevap image sonraki soruya geçerken kapatma fonksiyonu
             panelShow();
         }
         int minute = 10;
         int second = 60;
+        //10 dakika geri sayım fonksiyonu
         private void timer_Tick(object sender, EventArgs e)
         {
             second = second - 1;
@@ -117,6 +125,9 @@ namespace _6sigmaileProje
                 lblSecond.Text = "00";
                 timer.Stop();
                 MessageBox.Show("Exam Finish");
+                studentEnterPage studenEnter = new studentEnterPage();
+                studenEnter.Show();
+                this.Hide();
             }
         }
         public void panelShow()
@@ -131,6 +142,24 @@ namespace _6sigmaileProje
             panelAnswerC.BackColor = Color.FromArgb(115, 119, 123);
             panelAnswerD.BackColor = Color.FromArgb(115, 119, 123);
 
+        }
+        //sınav bitme fonksiyonu
+        public void finishExam(int questionEqueueNumber)
+        {
+            if (questionEqueueNumber == 18)
+            {
+                panelExamOver.Visible = true;
+                btnGoStudentPage.Visible = true;
+                btnAccept.Visible = false;
+                btnNextQuestion.Visible = false;
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            studentEnterPage enterPage = new studentEnterPage();
+            enterPage.Show();
+            this.Hide();
         }
     }
 }

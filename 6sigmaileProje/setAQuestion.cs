@@ -8,6 +8,7 @@ namespace _6sigmaileProje
 {
     class setAQuestion
     {
+        //rastgele soru belirleme fonksiyonu
         public void questionSetRandom(int[] questionString)
         {
             int[] questionNumber = new int[20];

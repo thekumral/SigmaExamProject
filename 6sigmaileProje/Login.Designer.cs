@@ -84,7 +84,7 @@ namespace _6sigmaileProje
             this.txtUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUserName.ForeColor = System.Drawing.SystemColors.Control;
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.Location = new System.Drawing.Point(254, 271);
+            this.txtUserName.Location = new System.Drawing.Point(65, 284);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
@@ -108,7 +108,7 @@ namespace _6sigmaileProje
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.Control;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(254, 349);
+            this.txtPassword.Location = new System.Drawing.Point(65, 362);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -132,7 +132,7 @@ namespace _6sigmaileProje
             this.btnSignUp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSignUp.HoverState.FillColor = System.Drawing.SystemColors.Control;
             this.btnSignUp.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(41)))));
-            this.btnSignUp.Location = new System.Drawing.Point(254, 458);
+            this.btnSignUp.Location = new System.Drawing.Point(65, 471);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(420, 49);
             this.btnSignUp.TabIndex = 6;
@@ -152,7 +152,7 @@ namespace _6sigmaileProje
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             this.btnSignIn.HoverState.FillColor = System.Drawing.SystemColors.Control;
             this.btnSignIn.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(41)))));
-            this.btnSignIn.Location = new System.Drawing.Point(254, 534);
+            this.btnSignIn.Location = new System.Drawing.Point(65, 547);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(420, 49);
             this.btnSignIn.TabIndex = 7;
@@ -164,7 +164,7 @@ namespace _6sigmaileProje
             this.lblForgetPassword.AutoSize = true;
             this.lblForgetPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblForgetPassword.ForeColor = System.Drawing.Color.White;
-            this.lblForgetPassword.Location = new System.Drawing.Point(537, 637);
+            this.lblForgetPassword.Location = new System.Drawing.Point(348, 650);
             this.lblForgetPassword.Name = "lblForgetPassword";
             this.lblForgetPassword.Size = new System.Drawing.Size(137, 21);
             this.lblForgetPassword.TabIndex = 8;
@@ -180,9 +180,9 @@ namespace _6sigmaileProje
             this.guna2Panel1.Controls.Add(this.txtPassword);
             this.guna2Panel1.Controls.Add(this.btnSignUp);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(496, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(693, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(784, 853);
+            this.guna2Panel1.Size = new System.Drawing.Size(587, 853);
             this.guna2Panel1.TabIndex = 9;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -200,7 +200,7 @@ namespace _6sigmaileProje
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button1.Location = new System.Drawing.Point(709, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(520, 25);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
             this.guna2Button1.Size = new System.Drawing.Size(53, 45);

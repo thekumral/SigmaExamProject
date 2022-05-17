@@ -14,14 +14,13 @@ namespace _6sigmaileProje
 {
     class questionWrite
     {
-        int nulls=0;
-
         SqlConnection connection = new SqlConnection("Data Source=THEKUMRAL;Initial Catalog=6Sigma;Integrated Security=True");
         
         public void SuccesfulySave()
         {
             MessageBox.Show("Başarıyla Kaydedildi !!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        //Sql ile rastgele belirlenen diziye göre formdan alınan bilgiler ile soru yazdırma fonksiyonu
         public void questionsWrite(int[] questionEqueu,int queryNumber,Label questionNumber,Guna.UI2.WinForms.Guna2TextBox titleQuestion,Guna.UI2.WinForms.Guna2TextBox imagePictureBox,Guna.UI2.WinForms.Guna2TextBox mainQuestionSentence,Guna.UI2.WinForms.Guna2TextBox answerA,Guna.UI2.WinForms.Guna2TextBox answerB,Guna.UI2.WinForms.Guna2TextBox answerC,Guna.UI2.WinForms.Guna2TextBox answerD,Label trueAnswer,Guna.UI2.WinForms.Guna2PictureBox picturebox)
             {
             

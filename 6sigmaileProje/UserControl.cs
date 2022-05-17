@@ -11,6 +11,7 @@ namespace _6sigmaileProje
     
     class UserControl
     {
+        //Sql ile user kontrol fonksiyonu
         SqlConnection sqlConnection = new SqlConnection("Data Source=THEKUMRAL;Initial Catalog=6Sigma;Integrated Security=True");
         SqlCommand sqlCommand;
         SqlDataReader reader;
