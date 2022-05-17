@@ -29,11 +29,14 @@ namespace _6sigmaileProje
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblForgotPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn = new Guna.UI2.WinForms.Guna2Button();
             this.btnSend = new Guna.UI2.WinForms.Guna2Button();
             this.txtMail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dragControlForgotP = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.elipseForgotPassword = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // lblForgotPassword
@@ -122,6 +125,17 @@ namespace _6sigmaileProje
             this.txtUserName.Size = new System.Drawing.Size(200, 36);
             this.txtUserName.TabIndex = 7;
             // 
+            // dragControlForgotP
+            // 
+            this.dragControlForgotP.DockIndicatorTransparencyValue = 0.6D;
+            this.dragControlForgotP.TargetControl = this;
+            this.dragControlForgotP.UseTransparentDrag = true;
+            // 
+            // elipseForgotPassword
+            // 
+            this.elipseForgotPassword.BorderRadius = 30;
+            this.elipseForgotPassword.TargetControl = this;
+            // 
             // forgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,6 +146,7 @@ namespace _6sigmaileProje
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.txtMail);
             this.Controls.Add(this.txtUserName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "forgotPassword";
             this.Text = "forgotPassword";
             this.Load += new System.EventHandler(this.forgotPassword_Load);
@@ -147,5 +162,7 @@ namespace _6sigmaileProje
         private Guna.UI2.WinForms.Guna2Button btnSend;
         private Guna.UI2.WinForms.Guna2TextBox txtMail;
         private Guna.UI2.WinForms.Guna2TextBox txtUserName;
+        private Guna.UI2.WinForms.Guna2DragControl dragControlForgotP;
+        private Guna.UI2.WinForms.Guna2Elipse elipseForgotPassword;
     }
 }
