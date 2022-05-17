@@ -23,14 +23,14 @@ namespace _6sigmaileProje
             
         }
         questionSave questionSave = new questionSave();
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnAddQuestion_Click(object sender, EventArgs e)
         {
 
             questionSave.questionSaves(rTextTitleForQuestion, rTextboxImageFilePath, rTextbxMainQuestion, rTextbxAnwerA, rTextbxAnwerB, rTextbxAnwerC, rTextbxAnwerD, rTextbxTrueAnswer);
 
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void btnChoose_Click(object sender, EventArgs e)
         {
             pictureBoxModule.SizeMode = PictureBoxSizeMode.StretchImage;
             openFileDialogModule.ShowDialog();
@@ -43,16 +43,15 @@ namespace _6sigmaileProje
 
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             Login f1 = new Login();
             f1.Show();
             this.Hide();
         }
+
+        
     }
 }

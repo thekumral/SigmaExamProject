@@ -58,7 +58,7 @@ namespace _6sigmaileProje
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(238)))), ((int)(((byte)(233)))));
-            this.lblWelcome.Location = new System.Drawing.Point(235, 201);
+            this.lblWelcome.Location = new System.Drawing.Point(208, 201);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(865, 42);
             this.lblWelcome.TabIndex = 0;
@@ -66,16 +66,14 @@ namespace _6sigmaileProje
             // 
             // btnReport
             // 
-            this.btnReport.BorderRadius = 8;
-            this.btnReport.BorderThickness = 5;
             this.btnReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
+            this.btnReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
             this.btnReport.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(238)))), ((int)(((byte)(233)))));
-            this.btnReport.Location = new System.Drawing.Point(453, 414);
+            this.btnReport.Location = new System.Drawing.Point(452, 347);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(390, 76);
             this.btnReport.TabIndex = 1;
@@ -83,16 +81,14 @@ namespace _6sigmaileProje
             // 
             // btnGoExamModule
             // 
-            this.btnGoExamModule.BorderRadius = 8;
-            this.btnGoExamModule.BorderThickness = 5;
             this.btnGoExamModule.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGoExamModule.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGoExamModule.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGoExamModule.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGoExamModule.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
+            this.btnGoExamModule.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
             this.btnGoExamModule.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGoExamModule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(238)))), ((int)(((byte)(233)))));
-            this.btnGoExamModule.Location = new System.Drawing.Point(453, 324);
+            this.btnGoExamModule.Location = new System.Drawing.Point(452, 423);
             this.btnGoExamModule.Name = "btnGoExamModule";
             this.btnGoExamModule.Size = new System.Drawing.Size(390, 76);
             this.btnGoExamModule.TabIndex = 2;
@@ -120,7 +116,7 @@ namespace _6sigmaileProje
             this.guna2PictureBox1.BorderRadius = 15;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(110, 552);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(110, 538);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(320, 303);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
