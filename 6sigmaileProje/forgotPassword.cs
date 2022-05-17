@@ -72,5 +72,12 @@ namespace _6sigmaileProje
                 }
                 }
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
     }
 }
