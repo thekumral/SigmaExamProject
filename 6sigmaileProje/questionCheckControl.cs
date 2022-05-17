@@ -39,27 +39,27 @@ namespace _6sigmaileProje
             if (choosingAnswer.Text == trueAnswer.Text)
             {
                 rightChoose.Visible = true;
-                panelD.BackColor = System.Drawing.Color.White;
+                /*panelD.BackColor = System.Drawing.Color.White;
                 txtboxD.FillColor = System.Drawing.Color.White;
                 panelC.BackColor = System.Drawing.Color.White;
                 txtboxC.FillColor = System.Drawing.Color.White;
                 panelB.BackColor = System.Drawing.Color.White;
                 txtboxB.FillColor = System.Drawing.Color.White;
                 panelA.BackColor = System.Drawing.Color.White;
-                txtboxA.FillColor = System.Drawing.Color.White;
+                txtboxA.FillColor = System.Drawing.Color.White;*/
 
             }
             if (choosingAnswer.Text != trueAnswer.Text)
             {
                 wrongChoose.Visible = true;
-                panelD.BackColor = System.Drawing.Color.White;
-                txtboxD.FillColor = System.Drawing.Color.White;
-                panelC.BackColor = System.Drawing.Color.White;
-                txtboxC.FillColor = System.Drawing.Color.White;
-                panelB.BackColor = System.Drawing.Color.White;
-                txtboxB.FillColor = System.Drawing.Color.White;
-                panelA.BackColor = System.Drawing.Color.White;
-                txtboxA.FillColor = System.Drawing.Color.White;
+                //panelD.BackColor = System.Drawing.Color.White;
+                //txtboxD.FillColor = System.Drawing.Color.White;
+                //panelC.BackColor = System.Drawing.Color.White;
+                //txtboxC.FillColor = System.Drawing.Color.White;
+                //panelB.BackColor = System.Drawing.Color.White;
+                //txtboxB.FillColor = System.Drawing.Color.White;
+                //panelA.BackColor = System.Drawing.Color.White;
+                //txtboxA.FillColor = System.Drawing.Color.White;
             }
         }
     }

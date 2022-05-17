@@ -18,23 +18,21 @@ namespace _6sigmaileProje
         {
             InitializeComponent();
         }
-
+        questionCheckControl checkControl = new questionCheckControl();
+        _6Rule rule6 = new _6Rule();
+        questionWrite qWrite = new questionWrite();
+        setAQuestion setAQuestion = new setAQuestion();
         private void txtAnswerA_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void panelAnswerA_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
+        
+        private void btnStart_Click(object sender, EventArgs e)
         {
             int questionEqueueNumber = Convert.ToInt32(lblQuestionEqueNumber.Text);
-            setAQuestion setAQuestion = new setAQuestion();
+            //Random olarak bir diziye değer atama fonksiyonu
             setAQuestion.questionSetRandom(questionEqueu);
-            questionWrite qWrite = new questionWrite();
             qWrite.questionsWrite(questionEqueu,questionEqueueNumber,lblQuestionNumber, txtbxTitleQuestion, txtbxImagePath, txtbxMainQuestionSentence, txtAnswerA, txtAnswerB, txtAnswerC, txtAnswerD, lblTureAnswer, pictureBoxExamModule);
             pictureBoxExamModule.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxExamModule.ImageLocation = txtbxImagePath.Text;
@@ -54,71 +52,47 @@ namespace _6sigmaileProje
             f1.Show();
             this.Hide();
         }
-        private void txtbxImagePath_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAccept_Click(object sender, EventArgs e)
         {
             int questionEqueueNumber = Convert.ToInt32(lblQuestionEqueNumber.Text);
-            questionCheckControl checkControl = new questionCheckControl();
+            //questionCheckControl checkControl = new questionCheckControl();
             checkControl.AnswerControl(panelRightChoose,panelWrongChoose,lblChooseAnswer,lblTureAnswer,txtAnswerA,txtAnswerB,txtAnswerC,txtAnswerD,panelAnswerA,panelAnswerB,panelAnswerC,panelAnswerD);
             checkControl.questionAddTrue(questionEqueu,questionEqueueNumber,lblTureAnswer,lblChooseAnswer);
-            _6Rule rule6 = new _6Rule();
+            //_6Rule rule6 = new _6Rule();
             rule6.questionAddTrue(questionEqueu, questionEqueueNumber, lblTureAnswer, lblChooseAnswer);
+            panelBackColor();
         }
-
-        private void panelAnswerB_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        private void panelAnswerC_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-        private void panelAnswerD_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
         private void panelAnswerA_Click(object sender, EventArgs e)
         {
             lblChooseAnswer.Text = "A";
             panelAnswerA.BackColor = Color.Yellow;
-            txtAnswerA.FillColor = Color.Yellow;
         }
 
         private void panelAnswerB_Click(object sender, EventArgs e)
         {
             lblChooseAnswer.Text = "B";
             panelAnswerB.BackColor = Color.Yellow;
-            txtAnswerB.FillColor = Color.Yellow;
         }
 
         private void panelAnswerC_Click(object sender, EventArgs e)
         {
             lblChooseAnswer.Text = "C";
             panelAnswerC.BackColor = Color.Yellow;
-            txtAnswerC.FillColor = Color.Yellow;
         }
 
         private void panelAnswerD_Click(object sender, EventArgs e)
         {
             lblChooseAnswer.Text = "D";
             panelAnswerD.BackColor = Color.Yellow;
-            txtAnswerD.FillColor = Color.Yellow;
         }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             int questionEqueueNumber = Convert.ToInt32(lblQuestionEqueNumber.Text);
-            questionCheckControl qCheckControl = new questionCheckControl();
-            questionWrite qWrite = new questionWrite();
-            qCheckControl.AnswerControl(panelRightChoose, panelWrongChoose, lblChooseAnswer, lblTureAnswer, txtAnswerA, txtAnswerB, txtAnswerC, txtAnswerD, panelAnswerA, panelAnswerB, panelAnswerC, panelAnswerD);
-            qCheckControl.questionAddTrue(questionEqueu, questionEqueueNumber, lblTureAnswer, lblChooseAnswer);
+            //questionCheckControl qCheckControl = new questionCheckControl();
+            //questionWrite qWrite = new questionWrite();
+            checkControl.AnswerControl(panelRightChoose, panelWrongChoose, lblChooseAnswer, lblTureAnswer, txtAnswerA, txtAnswerB, txtAnswerC, txtAnswerD, panelAnswerA, panelAnswerB, panelAnswerC, panelAnswerD);
+            checkControl.questionAddTrue(questionEqueu, questionEqueueNumber, lblTureAnswer, lblChooseAnswer);
             lblQuestionEqueNumber.Text= (Convert.ToInt32(lblQuestionEqueNumber.Text) + 1).ToString();
             qWrite.questionsWrite(questionEqueu,questionEqueueNumber,lblQuestionNumber, txtbxTitleQuestion, txtbxImagePath, txtbxMainQuestionSentence, txtAnswerA, txtAnswerB, txtAnswerC, txtAnswerD, lblTureAnswer, pictureBoxExamModule);
             pictureBoxExamModule.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -149,6 +123,14 @@ namespace _6sigmaileProje
         {
             panelRightChoose.Visible = false;
             panelWrongChoose.Visible = false;
+        }
+        public void panelBackColor()
+        {
+            panelAnswerA.BackColor = Color.FromArgb(115, 119, 123);
+            panelAnswerB.BackColor = Color.FromArgb(115, 119, 123);
+            panelAnswerC.BackColor = Color.FromArgb(115, 119, 123);
+            panelAnswerD.BackColor = Color.FromArgb(115, 119, 123);
+
         }
     }
 }

@@ -141,6 +141,7 @@ namespace _6sigmaileProje
             this.Controls.Add(this.btnReport);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "studentEnterPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "studentEnterPage";
             this.Load += new System.EventHandler(this.studentEnterPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

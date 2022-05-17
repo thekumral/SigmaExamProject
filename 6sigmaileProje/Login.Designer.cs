@@ -83,7 +83,7 @@ namespace _6sigmaileProje
             this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.Location = new System.Drawing.Point(270, 344);
+            this.txtUserName.Location = new System.Drawing.Point(254, 271);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
@@ -106,7 +106,7 @@ namespace _6sigmaileProje
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(270, 262);
+            this.txtPassword.Location = new System.Drawing.Point(254, 349);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
@@ -159,7 +159,7 @@ namespace _6sigmaileProje
             this.lblForgetPassword.ForeColor = System.Drawing.Color.White;
             this.lblForgetPassword.Location = new System.Drawing.Point(562, 641);
             this.lblForgetPassword.Name = "lblForgetPassword";
-            this.lblForgetPassword.Size = new System.Drawing.Size(115, 16);
+            this.lblForgetPassword.Size = new System.Drawing.Size(112, 19);
             this.lblForgetPassword.TabIndex = 8;
             this.lblForgetPassword.Text = "Forgot Password";
             this.lblForgetPassword.Click += new System.EventHandler(this.lblForgetPassword_Click);
