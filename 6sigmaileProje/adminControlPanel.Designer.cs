@@ -33,7 +33,7 @@ namespace _6sigmaileProje
             // 
             // adminControlPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 588);
             this.ControlBox = false;
@@ -43,6 +43,7 @@ namespace _6sigmaileProje
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "adminControlPanel";
             this.Text = "adminControlPanel";
+            this.Load += new System.EventHandler(this.adminControlPanel_Load);
             this.ResumeLayout(false);
 
         }

@@ -63,6 +63,9 @@ namespace _6sigmaileProje
             Application.Exit();
         }
 
-       
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

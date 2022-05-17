@@ -24,19 +24,13 @@ namespace _6sigmaileProje
             this.Hide();
         }
 
-        private void btnReport_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void studentEnterPage_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }

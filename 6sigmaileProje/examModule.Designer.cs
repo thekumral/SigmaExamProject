@@ -109,7 +109,7 @@ namespace _6sigmaileProje
             this.lblQuestionNumber.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblQuestionNumber.Location = new System.Drawing.Point(181, 36);
             this.lblQuestionNumber.Name = "lblQuestionNumber";
-            this.lblQuestionNumber.Size = new System.Drawing.Size(22, 25);
+            this.lblQuestionNumber.Size = new System.Drawing.Size(21, 22);
             this.lblQuestionNumber.TabIndex = 2;
             this.lblQuestionNumber.Text = "0";
             // 
@@ -119,7 +119,7 @@ namespace _6sigmaileProje
             this.lblAnswerD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerD.Location = new System.Drawing.Point(3, 41);
             this.lblAnswerD.Name = "lblAnswerD";
-            this.lblAnswerD.Size = new System.Drawing.Size(32, 21);
+            this.lblAnswerD.Size = new System.Drawing.Size(30, 18);
             this.lblAnswerD.TabIndex = 22;
             this.lblAnswerD.Text = "D-)";
             // 
@@ -129,7 +129,7 @@ namespace _6sigmaileProje
             this.lblAnswerC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerC.Location = new System.Drawing.Point(8, 41);
             this.lblAnswerC.Name = "lblAnswerC";
-            this.lblAnswerC.Size = new System.Drawing.Size(31, 21);
+            this.lblAnswerC.Size = new System.Drawing.Size(30, 18);
             this.lblAnswerC.TabIndex = 20;
             this.lblAnswerC.Text = "C-)";
             // 
@@ -139,7 +139,7 @@ namespace _6sigmaileProje
             this.lblAnswerB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerB.Location = new System.Drawing.Point(3, 55);
             this.lblAnswerB.Name = "lblAnswerB";
-            this.lblAnswerB.Size = new System.Drawing.Size(30, 21);
+            this.lblAnswerB.Size = new System.Drawing.Size(29, 18);
             this.lblAnswerB.TabIndex = 18;
             this.lblAnswerB.Text = "B-)";
             // 
@@ -149,7 +149,7 @@ namespace _6sigmaileProje
             this.lblAnswerA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerA.Location = new System.Drawing.Point(6, 48);
             this.lblAnswerA.Name = "lblAnswerA";
-            this.lblAnswerA.Size = new System.Drawing.Size(31, 21);
+            this.lblAnswerA.Size = new System.Drawing.Size(29, 18);
             this.lblAnswerA.TabIndex = 16;
             this.lblAnswerA.Text = "A-)";
             // 
@@ -386,7 +386,7 @@ namespace _6sigmaileProje
             this.lblquestion.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblquestion.Location = new System.Drawing.Point(12, 36);
             this.lblquestion.Name = "lblquestion";
-            this.lblquestion.Size = new System.Drawing.Size(166, 25);
+            this.lblquestion.Size = new System.Drawing.Size(163, 22);
             this.lblquestion.TabIndex = 41;
             this.lblquestion.Text = "Question Number:";
             // 
@@ -447,7 +447,7 @@ namespace _6sigmaileProje
             this.lblMinute.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMinute.Location = new System.Drawing.Point(9, 13);
             this.lblMinute.Name = "lblMinute";
-            this.lblMinute.Size = new System.Drawing.Size(41, 32);
+            this.lblMinute.Size = new System.Drawing.Size(38, 27);
             this.lblMinute.TabIndex = 45;
             this.lblMinute.Text = "00";
             // 
@@ -458,7 +458,7 @@ namespace _6sigmaileProje
             this.lblTimerdot.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTimerdot.Location = new System.Drawing.Point(50, 13);
             this.lblTimerdot.Name = "lblTimerdot";
-            this.lblTimerdot.Size = new System.Drawing.Size(20, 32);
+            this.lblTimerdot.Size = new System.Drawing.Size(19, 27);
             this.lblTimerdot.TabIndex = 46;
             this.lblTimerdot.Text = ":";
             // 
@@ -469,7 +469,7 @@ namespace _6sigmaileProje
             this.lblSecond.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSecond.Location = new System.Drawing.Point(69, 13);
             this.lblSecond.Name = "lblSecond";
-            this.lblSecond.Size = new System.Drawing.Size(41, 32);
+            this.lblSecond.Size = new System.Drawing.Size(38, 27);
             this.lblSecond.TabIndex = 47;
             this.lblSecond.Text = "00";
             // 
@@ -488,7 +488,7 @@ namespace _6sigmaileProje
             this.lblTrueChoose.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTrueChoose.Location = new System.Drawing.Point(16, 7);
             this.lblTrueChoose.Name = "lblTrueChoose";
-            this.lblTrueChoose.Size = new System.Drawing.Size(126, 30);
+            this.lblTrueChoose.Size = new System.Drawing.Size(125, 24);
             this.lblTrueChoose.TabIndex = 50;
             this.lblTrueChoose.Text = "True Answer";
             // 
@@ -520,7 +520,7 @@ namespace _6sigmaileProje
             this.lblWrongChoose.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblWrongChoose.Location = new System.Drawing.Point(16, 11);
             this.lblWrongChoose.Name = "lblWrongChoose";
-            this.lblWrongChoose.Size = new System.Drawing.Size(150, 30);
+            this.lblWrongChoose.Size = new System.Drawing.Size(146, 24);
             this.lblWrongChoose.TabIndex = 53;
             this.lblWrongChoose.Text = "Wrong Answer";
             // 
@@ -594,7 +594,6 @@ namespace _6sigmaileProje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
             this.ClientSize = new System.Drawing.Size(1608, 853);
             this.ControlBox = false;
             this.Controls.Add(this.txtbxTitleQuestion);
