@@ -15,6 +15,7 @@ namespace _6sigmaileProje
         {
             MessageBox.Show("Başarılı !!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        //Formdan alınan soru bilgilerini Sql'e kayıt fonksiyonu 
         public void questionSaves(RichTextBox titleQuestion,RichTextBox imagePath,RichTextBox mainQuestionSentence ,  RichTextBox answerA, RichTextBox answerB,RichTextBox answerC,RichTextBox answerD,RichTextBox rTextBoxTrueAnswer)
         {
             SqlConnection connection = new SqlConnection("Data Source=THEKUMRAL;Initial Catalog=6Sigma;Integrated Security=True");

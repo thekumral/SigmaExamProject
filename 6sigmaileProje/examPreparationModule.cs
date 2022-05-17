@@ -25,13 +25,14 @@ namespace _6sigmaileProje
         questionSave questionSave = new questionSave();
         private void btnAddQuestion_Click(object sender, EventArgs e)
         {
-
+            //Sql ile Soruları Kaydetme fonksiyonu
             questionSave.questionSaves(rTextTitleForQuestion, rTextboxImageFilePath, rTextbxMainQuestion, rTextbxAnwerA, rTextbxAnwerB, rTextbxAnwerC, rTextbxAnwerD, rTextbxTrueAnswer);
 
         }
 
         private void btnChoose_Click(object sender, EventArgs e)
         {
+            //seçilen resimin picture box da kontrol edilmesi
             pictureBoxModule.SizeMode = PictureBoxSizeMode.StretchImage;
             openFileDialogModule.ShowDialog();
             pictureBoxModule.ImageLocation = openFileDialogModule.FileName;

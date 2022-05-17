@@ -20,6 +20,7 @@ namespace _6sigmaileProje
         {
             MessageBox.Show("Başarıyla Kaydedildi !!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        //kullanısı kayıt fonksiyonu
         public void saveUser()
         {
             conn.Open();

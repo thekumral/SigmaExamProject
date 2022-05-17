@@ -10,7 +10,10 @@ namespace _6sigmaileProje
 {
     class _6Rule
     {
+        //sigma kuralını uygulama fonksiyonu
         SqlConnection connection = new SqlConnection("Data Source=THEKUMRAL;Initial Catalog=6Sigma;Integrated Security=True");
+        //Formdan alınan trueAnswer ve chooseAnswer değerlerini karşılaştırıp sorunun doğru cevaplanma sayısını(questionNumberOfCorrect) artırma 
+        //Eğer 6 olursa görüntülenme değerini değiştirir
         public void questionAddTrue(int[] questionEqueu, int queryNumber, Label trueAnswer, Label chooseAnswer)
         {
             int trueAnswerNumber = 0;
