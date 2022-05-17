@@ -72,8 +72,8 @@ namespace _6sigmaileProje
             this.btnSend.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSend.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSend.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSend.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
-            this.btnSend.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSend.FillColor = System.Drawing.Color.Black;
+            this.btnSend.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.btnSend.ForeColor = System.Drawing.Color.White;
             this.btnSend.Location = new System.Drawing.Point(400, 325);
             this.btnSend.Name = "btnSend";
@@ -140,7 +140,7 @@ namespace _6sigmaileProje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(815, 477);
             this.Controls.Add(this.lblForgotPassword);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnSend);
