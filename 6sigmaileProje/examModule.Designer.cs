@@ -70,6 +70,8 @@ namespace _6sigmaileProje
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtbxTitleQuestion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExamModule)).BeginInit();
             this.panelAnswerA.SuspendLayout();
             this.panelAnswerC.SuspendLayout();
@@ -80,6 +82,8 @@ namespace _6sigmaileProje
             this.panelRightChoose.SuspendLayout();
             this.panelWrongChoose.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // elipseExamModule
@@ -95,7 +99,7 @@ namespace _6sigmaileProje
             // 
             // pictureBoxExamModule
             // 
-            this.pictureBoxExamModule.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(160)))), ((int)(((byte)(87)))));
+            this.pictureBoxExamModule.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.pictureBoxExamModule.ImageRotate = 0F;
             this.pictureBoxExamModule.Location = new System.Drawing.Point(549, 150);
             this.pictureBoxExamModule.Name = "pictureBoxExamModule";
@@ -107,9 +111,9 @@ namespace _6sigmaileProje
             // 
             this.lblQuestionNumber.AutoSize = true;
             this.lblQuestionNumber.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblQuestionNumber.Location = new System.Drawing.Point(181, 36);
+            this.lblQuestionNumber.Location = new System.Drawing.Point(178, 35);
             this.lblQuestionNumber.Name = "lblQuestionNumber";
-            this.lblQuestionNumber.Size = new System.Drawing.Size(21, 22);
+            this.lblQuestionNumber.Size = new System.Drawing.Size(22, 25);
             this.lblQuestionNumber.TabIndex = 2;
             this.lblQuestionNumber.Text = "0";
             // 
@@ -119,7 +123,7 @@ namespace _6sigmaileProje
             this.lblAnswerD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerD.Location = new System.Drawing.Point(3, 41);
             this.lblAnswerD.Name = "lblAnswerD";
-            this.lblAnswerD.Size = new System.Drawing.Size(30, 18);
+            this.lblAnswerD.Size = new System.Drawing.Size(32, 21);
             this.lblAnswerD.TabIndex = 22;
             this.lblAnswerD.Text = "D-)";
             // 
@@ -129,7 +133,7 @@ namespace _6sigmaileProje
             this.lblAnswerC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerC.Location = new System.Drawing.Point(8, 41);
             this.lblAnswerC.Name = "lblAnswerC";
-            this.lblAnswerC.Size = new System.Drawing.Size(30, 18);
+            this.lblAnswerC.Size = new System.Drawing.Size(31, 21);
             this.lblAnswerC.TabIndex = 20;
             this.lblAnswerC.Text = "C-)";
             // 
@@ -139,7 +143,7 @@ namespace _6sigmaileProje
             this.lblAnswerB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerB.Location = new System.Drawing.Point(3, 55);
             this.lblAnswerB.Name = "lblAnswerB";
-            this.lblAnswerB.Size = new System.Drawing.Size(29, 18);
+            this.lblAnswerB.Size = new System.Drawing.Size(30, 21);
             this.lblAnswerB.TabIndex = 18;
             this.lblAnswerB.Text = "B-)";
             // 
@@ -149,7 +153,7 @@ namespace _6sigmaileProje
             this.lblAnswerA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnswerA.Location = new System.Drawing.Point(6, 48);
             this.lblAnswerA.Name = "lblAnswerA";
-            this.lblAnswerA.Size = new System.Drawing.Size(29, 18);
+            this.lblAnswerA.Size = new System.Drawing.Size(31, 21);
             this.lblAnswerA.TabIndex = 16;
             this.lblAnswerA.Text = "A-)";
             // 
@@ -166,7 +170,7 @@ namespace _6sigmaileProje
             this.txtAnswerA.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAnswerA.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAnswerA.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnswerA.Location = new System.Drawing.Point(42, 7);
+            this.txtAnswerA.Location = new System.Drawing.Point(40, 7);
             this.txtAnswerA.Multiline = true;
             this.txtAnswerA.Name = "txtAnswerA";
             this.txtAnswerA.PasswordChar = '\0';
@@ -217,7 +221,7 @@ namespace _6sigmaileProje
             this.txtAnswerB.PasswordChar = '\0';
             this.txtAnswerB.PlaceholderText = "";
             this.txtAnswerB.SelectedText = "";
-            this.txtAnswerB.Size = new System.Drawing.Size(486, 104);
+            this.txtAnswerB.Size = new System.Drawing.Size(486, 97);
             this.txtAnswerB.TabIndex = 25;
             // 
             // txtAnswerD
@@ -246,9 +250,9 @@ namespace _6sigmaileProje
             // 
             this.panelAnswerA.Controls.Add(this.txtAnswerA);
             this.panelAnswerA.Controls.Add(this.lblAnswerA);
-            this.panelAnswerA.Location = new System.Drawing.Point(245, 538);
+            this.panelAnswerA.Location = new System.Drawing.Point(245, 531);
             this.panelAnswerA.Name = "panelAnswerA";
-            this.panelAnswerA.Size = new System.Drawing.Size(575, 104);
+            this.panelAnswerA.Size = new System.Drawing.Size(575, 111);
             this.panelAnswerA.TabIndex = 27;
             this.panelAnswerA.Click += new System.EventHandler(this.panelAnswerA_Click);
             this.panelAnswerA.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAnswerA_Paint);
@@ -294,10 +298,10 @@ namespace _6sigmaileProje
             this.btnStart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnStart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnStart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnStart.FillColor = System.Drawing.SystemColors.Control;
+            this.btnStart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
             this.btnStart.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnStart.ForeColor = System.Drawing.Color.Black;
-            this.btnStart.Location = new System.Drawing.Point(1371, 471);
+            this.btnStart.Location = new System.Drawing.Point(9, 459);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(225, 53);
             this.btnStart.TabIndex = 31;
@@ -315,7 +319,7 @@ namespace _6sigmaileProje
             this.txtbxMainQuestionSentence.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtbxMainQuestionSentence.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbxMainQuestionSentence.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbxMainQuestionSentence.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
+            this.txtbxMainQuestionSentence.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.txtbxMainQuestionSentence.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbxMainQuestionSentence.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtbxMainQuestionSentence.ForeColor = System.Drawing.SystemColors.Desktop;
@@ -334,7 +338,8 @@ namespace _6sigmaileProje
             // lblTureAnswer
             // 
             this.lblTureAnswer.AutoSize = true;
-            this.lblTureAnswer.Location = new System.Drawing.Point(12, 279);
+            this.lblTureAnswer.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTureAnswer.Location = new System.Drawing.Point(34, 282);
             this.lblTureAnswer.Name = "lblTureAnswer";
             this.lblTureAnswer.Size = new System.Drawing.Size(86, 13);
             this.lblTureAnswer.TabIndex = 37;
@@ -353,7 +358,7 @@ namespace _6sigmaileProje
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.Location = new System.Drawing.Point(1524, 15);
+            this.guna2Button3.Location = new System.Drawing.Point(162, 3);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(62, 46);
             this.guna2Button3.TabIndex = 38;
@@ -370,7 +375,7 @@ namespace _6sigmaileProje
             this.txtbxImagePath.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbxImagePath.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtbxImagePath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbxImagePath.Location = new System.Drawing.Point(1551, 67);
+            this.txtbxImagePath.Location = new System.Drawing.Point(189, 55);
             this.txtbxImagePath.Name = "txtbxImagePath";
             this.txtbxImagePath.PasswordChar = '\0';
             this.txtbxImagePath.PlaceholderText = "";
@@ -384,9 +389,10 @@ namespace _6sigmaileProje
             // 
             this.lblquestion.AutoSize = true;
             this.lblquestion.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblquestion.Location = new System.Drawing.Point(12, 36);
+            this.lblquestion.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblquestion.Location = new System.Drawing.Point(9, 35);
             this.lblquestion.Name = "lblquestion";
-            this.lblquestion.Size = new System.Drawing.Size(163, 22);
+            this.lblquestion.Size = new System.Drawing.Size(166, 25);
             this.lblquestion.TabIndex = 41;
             this.lblquestion.Text = "Question Number:";
             // 
@@ -398,10 +404,10 @@ namespace _6sigmaileProje
             this.btnAccept.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAccept.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAccept.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAccept.FillColor = System.Drawing.SystemColors.Control;
+            this.btnAccept.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
             this.btnAccept.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAccept.ForeColor = System.Drawing.Color.Black;
-            this.btnAccept.Location = new System.Drawing.Point(1371, 545);
+            this.btnAccept.Location = new System.Drawing.Point(9, 533);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(225, 98);
             this.btnAccept.TabIndex = 42;
@@ -416,10 +422,10 @@ namespace _6sigmaileProje
             this.btnNextQuestion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnNextQuestion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnNextQuestion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNextQuestion.FillColor = System.Drawing.SystemColors.Control;
+            this.btnNextQuestion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
             this.btnNextQuestion.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnNextQuestion.ForeColor = System.Drawing.Color.Black;
-            this.btnNextQuestion.Location = new System.Drawing.Point(1371, 652);
+            this.btnNextQuestion.Location = new System.Drawing.Point(9, 640);
             this.btnNextQuestion.Name = "btnNextQuestion";
             this.btnNextQuestion.Size = new System.Drawing.Size(225, 98);
             this.btnNextQuestion.TabIndex = 43;
@@ -429,7 +435,8 @@ namespace _6sigmaileProje
             // lblQuestionEqueNumber
             // 
             this.lblQuestionEqueNumber.AutoSize = true;
-            this.lblQuestionEqueNumber.Location = new System.Drawing.Point(47, 302);
+            this.lblQuestionEqueNumber.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblQuestionEqueNumber.Location = new System.Drawing.Point(54, 305);
             this.lblQuestionEqueNumber.Name = "lblQuestionEqueNumber";
             this.lblQuestionEqueNumber.Size = new System.Drawing.Size(13, 13);
             this.lblQuestionEqueNumber.TabIndex = 44;
@@ -447,7 +454,7 @@ namespace _6sigmaileProje
             this.lblMinute.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMinute.Location = new System.Drawing.Point(9, 13);
             this.lblMinute.Name = "lblMinute";
-            this.lblMinute.Size = new System.Drawing.Size(38, 27);
+            this.lblMinute.Size = new System.Drawing.Size(41, 32);
             this.lblMinute.TabIndex = 45;
             this.lblMinute.Text = "00";
             // 
@@ -458,7 +465,7 @@ namespace _6sigmaileProje
             this.lblTimerdot.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTimerdot.Location = new System.Drawing.Point(50, 13);
             this.lblTimerdot.Name = "lblTimerdot";
-            this.lblTimerdot.Size = new System.Drawing.Size(19, 27);
+            this.lblTimerdot.Size = new System.Drawing.Size(20, 32);
             this.lblTimerdot.TabIndex = 46;
             this.lblTimerdot.Text = ":";
             // 
@@ -469,14 +476,15 @@ namespace _6sigmaileProje
             this.lblSecond.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSecond.Location = new System.Drawing.Point(69, 13);
             this.lblSecond.Name = "lblSecond";
-            this.lblSecond.Size = new System.Drawing.Size(38, 27);
+            this.lblSecond.Size = new System.Drawing.Size(41, 32);
             this.lblSecond.TabIndex = 47;
             this.lblSecond.Text = "00";
             // 
             // lblChooseAnswer
             // 
             this.lblChooseAnswer.AutoSize = true;
-            this.lblChooseAnswer.Location = new System.Drawing.Point(17, 330);
+            this.lblChooseAnswer.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblChooseAnswer.Location = new System.Drawing.Point(39, 333);
             this.lblChooseAnswer.Name = "lblChooseAnswer";
             this.lblChooseAnswer.Size = new System.Drawing.Size(81, 13);
             this.lblChooseAnswer.TabIndex = 48;
@@ -486,9 +494,10 @@ namespace _6sigmaileProje
             // 
             this.lblTrueChoose.AutoSize = true;
             this.lblTrueChoose.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTrueChoose.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTrueChoose.Location = new System.Drawing.Point(16, 7);
             this.lblTrueChoose.Name = "lblTrueChoose";
-            this.lblTrueChoose.Size = new System.Drawing.Size(125, 24);
+            this.lblTrueChoose.Size = new System.Drawing.Size(126, 30);
             this.lblTrueChoose.TabIndex = 50;
             this.lblTrueChoose.Text = "True Answer";
             // 
@@ -518,9 +527,10 @@ namespace _6sigmaileProje
             // 
             this.lblWrongChoose.AutoSize = true;
             this.lblWrongChoose.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblWrongChoose.ForeColor = System.Drawing.SystemColors.Control;
             this.lblWrongChoose.Location = new System.Drawing.Point(16, 11);
             this.lblWrongChoose.Name = "lblWrongChoose";
-            this.lblWrongChoose.Size = new System.Drawing.Size(146, 24);
+            this.lblWrongChoose.Size = new System.Drawing.Size(150, 30);
             this.lblWrongChoose.TabIndex = 53;
             this.lblWrongChoose.Text = "Wrong Answer";
             // 
@@ -528,7 +538,7 @@ namespace _6sigmaileProje
             // 
             this.panelRightChoose.Controls.Add(this.lblTrueChoose);
             this.panelRightChoose.Controls.Add(this.guna2PictureBox1);
-            this.panelRightChoose.Location = new System.Drawing.Point(37, 567);
+            this.panelRightChoose.Location = new System.Drawing.Point(37, 563);
             this.panelRightChoose.Name = "panelRightChoose";
             this.panelRightChoose.Size = new System.Drawing.Size(169, 143);
             this.panelRightChoose.TabIndex = 55;
@@ -538,7 +548,7 @@ namespace _6sigmaileProje
             // 
             this.panelWrongChoose.Controls.Add(this.guna2PictureBox2);
             this.panelWrongChoose.Controls.Add(this.lblWrongChoose);
-            this.panelWrongChoose.Location = new System.Drawing.Point(37, 567);
+            this.panelWrongChoose.Location = new System.Drawing.Point(34, 566);
             this.panelWrongChoose.Name = "panelWrongChoose";
             this.panelWrongChoose.Size = new System.Drawing.Size(169, 143);
             this.panelWrongChoose.TabIndex = 56;
@@ -553,7 +563,7 @@ namespace _6sigmaileProje
             this.guna2Panel1.Controls.Add(this.lblMinute);
             this.guna2Panel1.Controls.Add(this.lblTimerdot);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(102, 84);
+            this.guna2Panel1.Location = new System.Drawing.Point(99, 83);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(120, 59);
             this.guna2Panel1.TabIndex = 57;
@@ -562,7 +572,8 @@ namespace _6sigmaileProje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(9, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 30);
             this.label1.TabIndex = 58;
@@ -578,7 +589,7 @@ namespace _6sigmaileProje
             this.txtbxTitleQuestion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtbxTitleQuestion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbxTitleQuestion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtbxTitleQuestion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
+            this.txtbxTitleQuestion.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.txtbxTitleQuestion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbxTitleQuestion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtbxTitleQuestion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -590,32 +601,51 @@ namespace _6sigmaileProje
             this.txtbxTitleQuestion.Size = new System.Drawing.Size(920, 129);
             this.txtbxTitleQuestion.TabIndex = 59;
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
+            this.guna2Panel2.Controls.Add(this.guna2Button3);
+            this.guna2Panel2.Controls.Add(this.btnStart);
+            this.guna2Panel2.Controls.Add(this.txtbxImagePath);
+            this.guna2Panel2.Controls.Add(this.btnNextQuestion);
+            this.guna2Panel2.Controls.Add(this.btnAccept);
+            this.guna2Panel2.Location = new System.Drawing.Point(1356, 1);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(251, 853);
+            this.guna2Panel2.TabIndex = 60;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
+            this.guna2Panel3.Controls.Add(this.lblquestion);
+            this.guna2Panel3.Controls.Add(this.lblQuestionNumber);
+            this.guna2Panel3.Controls.Add(this.panelRightChoose);
+            this.guna2Panel3.Controls.Add(this.label1);
+            this.guna2Panel3.Controls.Add(this.lblChooseAnswer);
+            this.guna2Panel3.Controls.Add(this.lblTureAnswer);
+            this.guna2Panel3.Controls.Add(this.panelWrongChoose);
+            this.guna2Panel3.Controls.Add(this.guna2Panel1);
+            this.guna2Panel3.Controls.Add(this.lblQuestionEqueNumber);
+            this.guna2Panel3.Location = new System.Drawing.Point(3, 1);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(242, 853);
+            this.guna2Panel3.TabIndex = 61;
+            // 
             // examModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
             this.ClientSize = new System.Drawing.Size(1608, 853);
             this.ControlBox = false;
+            this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.txtbxTitleQuestion);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.panelWrongChoose);
-            this.Controls.Add(this.panelRightChoose);
-            this.Controls.Add(this.lblChooseAnswer);
-            this.Controls.Add(this.lblQuestionEqueNumber);
-            this.Controls.Add(this.btnNextQuestion);
-            this.Controls.Add(this.btnAccept);
-            this.Controls.Add(this.lblquestion);
-            this.Controls.Add(this.txtbxImagePath);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.lblTureAnswer);
             this.Controls.Add(this.txtbxMainQuestionSentence);
-            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panelAnswerD);
             this.Controls.Add(this.panelAnswerB);
             this.Controls.Add(this.panelAnswerC);
             this.Controls.Add(this.panelAnswerA);
-            this.Controls.Add(this.lblQuestionNumber);
             this.Controls.Add(this.pictureBoxExamModule);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
@@ -639,8 +669,10 @@ namespace _6sigmaileProje
             this.panelWrongChoose.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -685,5 +717,7 @@ namespace _6sigmaileProje
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox txtbxTitleQuestion;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
     }
 }
