@@ -127,6 +127,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_6SigmaDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_6SigmaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_6SigmaDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="adminControlPanel.resx">
       <DependentUpon>adminControlPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +218,17 @@
     </None>
     <None Include="_6SigmaDataSet3.xss">
       <DependentUpon>_6SigmaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_6SigmaDataSet4.xsc">
+      <DependentUpon>_6SigmaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_6SigmaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_6SigmaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_6SigmaDataSet4.xss">
+      <DependentUpon>_6SigmaDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

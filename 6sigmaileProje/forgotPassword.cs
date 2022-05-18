@@ -25,7 +25,7 @@ namespace _6sigmaileProje
 
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
+        private void btnSend_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection("Data Source = THEKUMRAL; Initial Catalog = 6Sigma; Integrated Security = True");
             connection.Open();
@@ -47,12 +47,12 @@ namespace _6sigmaileProje
                     MailMessage mail = new MailMessage();
                     String date = DateTime.Now.ToLongDateString();
                     String mailadress = ("ruveydakisla34@gmail.com");
-                    String password = ("ruveyda32.");
+                    String password = ("");
                     String smtpServer = "smtp.gmail.com";
                     String toWho = (reader["mail"].ToString());
                     String subject = ("Password Reminder Email");
                     String write = ("Dear" + reader["name"].ToString() + reader["surname"].ToString() + ",\n" + "you requested a password reminder from us on " + date + "\n" +
-                            "password:" + reader["password"].ToString() + "\n" + "Have a good day :)");
+                            "password: " + reader["password"].ToString() + "\n" + "Have a good day :)");
                     smtpserver.Credentials = new NetworkCredential(mailadress, password);
                     smtpserver.Port = 587;
                     smtpserver.Host = smtpServer;
@@ -64,7 +64,6 @@ namespace _6sigmaileProje
                     smtpserver.Send(mail);
                     DialogResult dialog = new DialogResult();
                     dialog = MessageBox.Show("The information you entered matches.Your Password has been sent to your e-mail adress.");
-                    this.Close();
                 }
                 catch(Exception error)
                 {
@@ -78,6 +77,11 @@ namespace _6sigmaileProje
             Login login = new Login();
             this.Hide();
             login.Show();
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

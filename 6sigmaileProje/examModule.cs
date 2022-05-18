@@ -150,7 +150,7 @@ namespace _6sigmaileProje
         //sınav bitme fonksiyonu
         public void finishExam(int questionEqueueNumber)
         {
-            if (questionEqueueNumber == 17)
+            if (questionEqueueNumber == 10)
             {
                 panelExamOver.Visible = true;
                 btnGoStudentPage.Visible = true;

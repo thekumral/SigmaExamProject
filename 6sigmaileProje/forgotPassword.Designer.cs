@@ -80,6 +80,7 @@ namespace _6sigmaileProje
             this.btnSend.Size = new System.Drawing.Size(200, 38);
             this.btnSend.TabIndex = 9;
             this.btnSend.Text = "Send Mail";
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click_1);
             // 
             // txtMail
             // 
@@ -149,6 +150,7 @@ namespace _6sigmaileProje
             this.Controls.Add(this.txtUserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "forgotPassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "forgotPassword";
             this.Load += new System.EventHandler(this.forgotPassword_Load);
             this.ResumeLayout(false);

@@ -20,6 +20,8 @@ namespace _6sigmaileProje
         }
         private void Report_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_6SigmaDataSet4.questions' table. You can move, or remove it, as needed.
+            this.questionsTableAdapter1.Fill(this._6SigmaDataSet4.questions);
             connection.Open();
             Reportss("Select * From questions");
             connection.Close();
@@ -36,7 +38,7 @@ namespace _6sigmaileProje
             sqlDa.Fill(ds);
 
             questionDataGrid.DataSource = ds.Tables[0];
-            questionDataGrid.Columns[1].Visible = false;
+            
             questionDataGrid.Columns[2].Visible = false;
             questionDataGrid.Columns[3].Visible = false;
             questionDataGrid.Columns[4].Visible = false;
@@ -44,7 +46,7 @@ namespace _6sigmaileProje
             questionDataGrid.Columns[6].Visible = false;
             questionDataGrid.Columns[7].Visible = false;
             questionDataGrid.Columns[8].Visible = false;
-            questionDataGrid.Columns[10].Visible = false;
+            
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

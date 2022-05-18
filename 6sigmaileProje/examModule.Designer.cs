@@ -71,8 +71,8 @@ namespace _6sigmaileProje
             this.label1 = new System.Windows.Forms.Label();
             this.txtbxTitleQuestion = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGoStudentPage = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelExamOver = new Guna.UI2.WinForms.Guna2Panel();
             this.lblExamOver = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExamModule)).BeginInit();
@@ -349,6 +349,7 @@ namespace _6sigmaileProje
             this.lblTureAnswer.Size = new System.Drawing.Size(86, 13);
             this.lblTureAnswer.TabIndex = 37;
             this.lblTureAnswer.Text = "TrueAnswerHide";
+            this.lblTureAnswer.Visible = false;
             // 
             // guna2Button3
             // 
@@ -445,6 +446,7 @@ namespace _6sigmaileProje
             this.lblQuestionEqueNumber.Size = new System.Drawing.Size(13, 13);
             this.lblQuestionEqueNumber.TabIndex = 44;
             this.lblQuestionEqueNumber.Text = "0";
+            this.lblQuestionEqueNumber.Visible = false;
             // 
             // timer
             // 
@@ -493,6 +495,7 @@ namespace _6sigmaileProje
             this.lblChooseAnswer.Size = new System.Drawing.Size(81, 13);
             this.lblChooseAnswer.TabIndex = 48;
             this.lblChooseAnswer.Text = "Choose Answer";
+            this.lblChooseAnswer.Visible = false;
             // 
             // lblTrueChoose
             // 
@@ -623,23 +626,6 @@ namespace _6sigmaileProje
             this.guna2Panel2.Size = new System.Drawing.Size(251, 853);
             this.guna2Panel2.TabIndex = 60;
             // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
-            this.guna2Panel3.Controls.Add(this.lblquestion);
-            this.guna2Panel3.Controls.Add(this.lblQuestionNumber);
-            this.guna2Panel3.Controls.Add(this.panelRightChoose);
-            this.guna2Panel3.Controls.Add(this.label1);
-            this.guna2Panel3.Controls.Add(this.lblChooseAnswer);
-            this.guna2Panel3.Controls.Add(this.lblTureAnswer);
-            this.guna2Panel3.Controls.Add(this.panelWrongChoose);
-            this.guna2Panel3.Controls.Add(this.guna2Panel1);
-            this.guna2Panel3.Controls.Add(this.lblQuestionEqueNumber);
-            this.guna2Panel3.Location = new System.Drawing.Point(3, 1);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(242, 853);
-            this.guna2Panel3.TabIndex = 61;
-            // 
             // btnGoStudentPage
             // 
             this.btnGoStudentPage.BorderRadius = 8;
@@ -658,6 +644,23 @@ namespace _6sigmaileProje
             this.btnGoStudentPage.Text = "Go to Student Enter Page";
             this.btnGoStudentPage.Visible = false;
             this.btnGoStudentPage.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
+            this.guna2Panel3.Controls.Add(this.lblquestion);
+            this.guna2Panel3.Controls.Add(this.lblQuestionNumber);
+            this.guna2Panel3.Controls.Add(this.panelRightChoose);
+            this.guna2Panel3.Controls.Add(this.label1);
+            this.guna2Panel3.Controls.Add(this.lblChooseAnswer);
+            this.guna2Panel3.Controls.Add(this.lblTureAnswer);
+            this.guna2Panel3.Controls.Add(this.panelWrongChoose);
+            this.guna2Panel3.Controls.Add(this.guna2Panel1);
+            this.guna2Panel3.Controls.Add(this.lblQuestionEqueNumber);
+            this.guna2Panel3.Location = new System.Drawing.Point(3, 1);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(242, 853);
+            this.guna2Panel3.TabIndex = 61;
             // 
             // panelExamOver
             // 

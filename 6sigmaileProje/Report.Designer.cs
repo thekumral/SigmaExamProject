@@ -44,7 +44,11 @@ namespace _6sigmaileProje
             this.questionDataGrid = new System.Windows.Forms.DataGridView();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this._6SigmaDataSet4 = new _6sigmaileProje._6SigmaDataSet4();
+            this.questionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.questionsTableAdapter1 = new _6sigmaileProje._6SigmaDataSet4TableAdapters.questionsTableAdapter();
             this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionSubject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quetionImagePathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionMainSentenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +66,8 @@ namespace _6sigmaileProje
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.questionDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._6SigmaDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.questionsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dragControlReport
@@ -102,7 +108,7 @@ namespace _6sigmaileProje
             this.guna2Panel1.Controls.Add(this.questionDataGrid);
             this.guna2Panel1.Location = new System.Drawing.Point(1, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(437, 853);
+            this.guna2Panel1.Size = new System.Drawing.Size(593, 853);
             this.guna2Panel1.TabIndex = 1;
             // 
             // questionDataGrid
@@ -112,6 +118,7 @@ namespace _6sigmaileProje
             this.questionDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.questionDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.questionIDDataGridViewTextBoxColumn,
+            this.questionSubject,
             this.questionTitleDataGridViewTextBoxColumn,
             this.quetionImagePathDataGridViewTextBoxColumn,
             this.questionMainSentenceDataGridViewTextBoxColumn,
@@ -122,14 +129,14 @@ namespace _6sigmaileProje
             this.questionTrueAnswerDataGridViewTextBoxColumn,
             this.questionNumberOfCorrectDataGridViewTextBoxColumn,
             this.questionViewDataGridViewTextBoxColumn});
-            this.questionDataGrid.DataSource = this.questionsBindingSource;
+            this.questionDataGrid.DataSource = this.questionsBindingSource1;
             this.questionDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.questionDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
             this.questionDataGrid.Location = new System.Drawing.Point(0, 0);
             this.questionDataGrid.Name = "questionDataGrid";
             this.questionDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.questionDataGrid.RowTemplate.Height = 30;
-            this.questionDataGrid.Size = new System.Drawing.Size(437, 853);
+            this.questionDataGrid.Size = new System.Drawing.Size(593, 853);
             this.questionDataGrid.TabIndex = 0;
             this.questionDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -163,6 +170,20 @@ namespace _6sigmaileProje
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // _6SigmaDataSet4
+            // 
+            this._6SigmaDataSet4.DataSetName = "_6SigmaDataSet4";
+            this._6SigmaDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // questionsBindingSource1
+            // 
+            this.questionsBindingSource1.DataMember = "questions";
+            this.questionsBindingSource1.DataSource = this._6SigmaDataSet4;
+            // 
+            // questionsTableAdapter1
+            // 
+            this.questionsTableAdapter1.ClearBeforeFill = true;
+            // 
             // questionIDDataGridViewTextBoxColumn
             // 
             this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "questionID";
@@ -171,7 +192,13 @@ namespace _6sigmaileProje
             this.questionIDDataGridViewTextBoxColumn.HeaderText = "Question ID";
             this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
             this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.questionIDDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // questionSubject
+            // 
+            this.questionSubject.DataPropertyName = "questionSubject";
+            this.questionSubject.HeaderText = "Question Subject";
+            this.questionSubject.Name = "questionSubject";
+            this.questionSubject.Width = 300;
             // 
             // questionTitleDataGridViewTextBoxColumn
             // 
@@ -268,6 +295,8 @@ namespace _6sigmaileProje
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.questionDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._6SigmaDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.questionsBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,7 +314,11 @@ namespace _6sigmaileProje
         private System.Windows.Forms.DataGridView questionDataGrid;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private _6SigmaDataSet4 _6SigmaDataSet4;
+        private System.Windows.Forms.BindingSource questionsBindingSource1;
+        private _6SigmaDataSet4TableAdapters.questionsTableAdapter questionsTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn questionSubject;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionTitleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quetionImagePathDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionMainSentenceDataGridViewTextBoxColumn;

@@ -36,5 +36,12 @@ namespace _6sigmaileProje
             reportPage.Show();
             this.Hide();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+        }
     }
 }
