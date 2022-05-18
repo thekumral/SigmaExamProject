@@ -20,11 +20,10 @@ namespace _6sigmaileProje
         {
             SqlConnection connection = new SqlConnection("Data Source=THEKUMRAL;Initial Catalog=6Sigma;Integrated Security=True");
             SqlCommand command;
-            examPreparationModule expremodule = new examPreparationModule();
             connection.Open();
             command = new SqlCommand();
             command.Connection = connection;
-            command.CommandText= "insert into questions values('"+titleQuestion.Text+ "','" + imagePath.Text + "','" + mainQuestionSentence.Text + "','" +answerA.Text+"','"+answerB.Text+"','"+answerC.Text+"','"+answerD.Text+"','"+ rTextBoxTrueAnswer.Text+ "','" + 0 + "')";
+            command.CommandText= "insert into questions values('"+titleQuestion.Text+ "','" + imagePath.Text + "','" + mainQuestionSentence.Text + "','" +answerA.Text+"','"+answerB.Text+"','"+answerC.Text+"','"+answerD.Text+"','"+ rTextBoxTrueAnswer.Text+ "','" + 0+ "','"+0 + "')";
             command.ExecuteNonQuery();
             connection.Close();
             SuccesfulySave();

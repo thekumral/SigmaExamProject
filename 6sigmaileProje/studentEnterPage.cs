@@ -16,7 +16,6 @@ namespace _6sigmaileProje
         {
             InitializeComponent();
         }
-
         private void btnGoExamModule_Click(object sender, EventArgs e)
         {
             examModule exModule = new examModule();
@@ -31,6 +30,11 @@ namespace _6sigmaileProje
 
         }
 
-       
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            Report reportPage = new Report();
+            reportPage.Show();
+            this.Hide();
+        }
     }
 }

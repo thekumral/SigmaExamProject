@@ -68,3 +68,4 @@ C:\Users\Lenovo\Downloads\projee\projee\SigmaExamProject\6sigmaileProje\obj\Debu
 C:\Users\Lenovo\Downloads\projee\projee\SigmaExamProject\6sigmaileProje\obj\Debug\6sigmaileProje.csproj.CopyComplete
 C:\Users\Lenovo\Downloads\projee\projee\SigmaExamProject\6sigmaileProje\obj\Debug\6sigmaileProje.exe
 C:\Users\Lenovo\Downloads\projee\projee\SigmaExamProject\6sigmaileProje\obj\Debug\6sigmaileProje.pdb
+C:\Users\theku\Documents\GitHub\SigmaExamProject\6sigmaileProje\obj\Debug\_6sigmaileProje.Report.resources

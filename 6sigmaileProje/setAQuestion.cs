@@ -16,7 +16,7 @@ namespace _6sigmaileProje
             Random random = new Random();
             for (int i = 0; i < questionNumber.Length; i++)
             {
-                questionNumber[i] = random.Next(1, 8);
+                questionNumber[i] = random.Next(11, 30);
                 questionString[i] = questionNumber[i];
             }
         }

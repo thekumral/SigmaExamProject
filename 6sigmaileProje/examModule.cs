@@ -14,6 +14,7 @@ namespace _6sigmaileProje
     public partial class examModule : Form
     {
         int[] questionEqueu = new int[20];
+        int[] reportTrue = new int[20];
         public examModule()
         {
             InitializeComponent();
@@ -22,6 +23,8 @@ namespace _6sigmaileProje
         _6Rule rule6 = new _6Rule();
         questionWrite qWrite = new questionWrite();
         setAQuestion setAQuestion = new setAQuestion();
+        Report rep = new Report();
+        reportWrite reportWrite = new reportWrite();
         private void txtAnswerA_TextChanged(object sender, EventArgs e)
         {
 
@@ -61,7 +64,7 @@ namespace _6sigmaileProje
             //Kontrol sınıfından cevap kontrol fonksiyonu 
             checkControl.AnswerControl(panelRightChoose, panelWrongChoose, lblChooseAnswer, lblTureAnswer);
             //Kontrol sınıfından soru doğruluğunu kontrol etme fonksiyonu
-            checkControl.questionAddTrue(questionEqueu,questionEqueueNumber,lblTureAnswer,lblChooseAnswer);
+            checkControl.questionAddTrue(questionEqueu,reportTrue,questionEqueueNumber,lblTureAnswer,lblChooseAnswer);
             //Kural sınıfından soruların 6 sigma prensibine göre gelme fonksiyonu 
             rule6.questionAddTrue(questionEqueu, questionEqueueNumber, lblTureAnswer, lblChooseAnswer);
             //Click olayi ile panel renklerini ayarlama fonksiyonu
@@ -128,6 +131,7 @@ namespace _6sigmaileProje
                 studentEnterPage studenEnter = new studentEnterPage();
                 studenEnter.Show();
                 this.Hide();
+                //reportWrite.reportSave(reportTrue);
             }
         }
         public void panelShow()
@@ -146,13 +150,14 @@ namespace _6sigmaileProje
         //sınav bitme fonksiyonu
         public void finishExam(int questionEqueueNumber)
         {
-            if (questionEqueueNumber == 18)
+            if (questionEqueueNumber == 17)
             {
                 panelExamOver.Visible = true;
                 btnGoStudentPage.Visible = true;
                 btnAccept.Visible = false;
                 btnNextQuestion.Visible = false;
             }
+            
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -160,6 +165,7 @@ namespace _6sigmaileProje
             studentEnterPage enterPage = new studentEnterPage();
             enterPage.Show();
             this.Hide();
+            
         }
     }
 }

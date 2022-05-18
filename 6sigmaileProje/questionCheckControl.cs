@@ -12,7 +12,7 @@ namespace _6sigmaileProje
     {
         SqlConnection connection = new SqlConnection("Data Source=THEKUMRAL;Initial Catalog=6Sigma;Integrated Security=True");
         //Sql den cekilip forma yazdırılan trueAnswer değerini chooseAnswer değeriyle karşılaştırıp doğru sayısını(questionNumberOfCorrect) artırma fonksiyonu
-        public void questionAddTrue(int[] questionEqueu, int queryNumber,Label trueAnswer,Label chooseAnswer)
+        public void questionAddTrue(int[] questionEqueu, int[] reportTrue,int queryNumber,Label trueAnswer,Label chooseAnswer)
         {
             int beforeNumber=0;
             int updateNumber=0;
@@ -26,6 +26,7 @@ namespace _6sigmaileProje
                     beforeNumber = Convert.ToInt32(read["questionNumberOfCorrect"]);
                     updateNumber=++beforeNumber;
                 }
+                reportTrue[queryNumber] = 1;
             }
             read.Close();
             //Sqldeki questionNumberOfCorrect sayisi artırılmış haliyle değiştirilir

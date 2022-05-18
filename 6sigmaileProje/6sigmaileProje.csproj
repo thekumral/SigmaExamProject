@@ -85,6 +85,13 @@
     <Compile Include="questionCheckControl.cs" />
     <Compile Include="questionWrite.cs" />
     <Compile Include="questionSave.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportWrite.cs" />
     <Compile Include="setAQuestion.cs" />
     <Compile Include="signIn.cs">
       <SubType>Form</SubType>
@@ -115,6 +122,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_6SigmaDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_6SigmaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_6SigmaDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="adminControlPanel.resx">
       <DependentUpon>adminControlPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +151,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="signIn.resx">
       <DependentUpon>signIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +202,17 @@
     </None>
     <None Include="_6SigmaDataSet2.xss">
       <DependentUpon>_6SigmaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_6SigmaDataSet3.xsc">
+      <DependentUpon>_6SigmaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_6SigmaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_6SigmaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_6SigmaDataSet3.xss">
+      <DependentUpon>_6SigmaDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

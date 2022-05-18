@@ -78,6 +78,7 @@ namespace _6sigmaileProje
             this.btnReport.Size = new System.Drawing.Size(390, 76);
             this.btnReport.TabIndex = 1;
             this.btnReport.Text = "Show report";
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnGoExamModule
             // 
