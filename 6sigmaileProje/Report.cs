@@ -51,6 +51,13 @@ namespace _6sigmaileProje
         {
             
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            studentEnterPage enterPage = new studentEnterPage();
+            enterPage.Show();
+            this.Hide();
+        }
     }
 
 

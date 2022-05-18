@@ -30,6 +30,9 @@ namespace _6sigmaileProje
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dragControlReport = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.elipseReportPage = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this._6SigmaDataSet2 = new _6sigmaileProje._6SigmaDataSet2();
@@ -39,23 +42,26 @@ namespace _6sigmaileProje
             this.questionsTableAdapter = new _6sigmaileProje._6SigmaDataSet3TableAdapters.questionsTableAdapter();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.questionDataGrid = new System.Windows.Forms.DataGridView();
-            this.questionViewDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionNumberOfCorrectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionTrueAnswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionAnswerDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionAnswerCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionAnswerBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionAnswerADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionMainSentenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quetionImagePathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quetionImagePathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionMainSentenceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionAnswerADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionAnswerBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionAnswerCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionAnswerDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionTrueAnswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionNumberOfCorrectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionViewDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this._6SigmaDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sigmaDataSet2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._6SigmaDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.questionsBindingSource)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.questionDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dragControlReport
@@ -102,6 +108,7 @@ namespace _6sigmaileProje
             // questionDataGrid
             // 
             this.questionDataGrid.AutoGenerateColumns = false;
+            this.questionDataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
             this.questionDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.questionDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.questionIDDataGridViewTextBoxColumn,
@@ -117,85 +124,136 @@ namespace _6sigmaileProje
             this.questionViewDataGridViewTextBoxColumn});
             this.questionDataGrid.DataSource = this.questionsBindingSource;
             this.questionDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.questionDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
             this.questionDataGrid.Location = new System.Drawing.Point(0, 0);
             this.questionDataGrid.Name = "questionDataGrid";
+            this.questionDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.questionDataGrid.RowTemplate.Height = 30;
             this.questionDataGrid.Size = new System.Drawing.Size(437, 853);
             this.questionDataGrid.TabIndex = 0;
             this.questionDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // questionViewDataGridViewTextBoxColumn
+            // btnBack
             // 
-            this.questionViewDataGridViewTextBoxColumn.DataPropertyName = "questionView";
-            this.questionViewDataGridViewTextBoxColumn.HeaderText = "questionView";
-            this.questionViewDataGridViewTextBoxColumn.Name = "questionViewDataGridViewTextBoxColumn";
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
+            this.btnBack.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.HoverState.FillColor = System.Drawing.SystemColors.Control;
+            this.btnBack.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(153)))), ((int)(((byte)(75)))));
+            this.btnBack.Location = new System.Drawing.Point(620, 683);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(500, 53);
+            this.btnBack.TabIndex = 2;
+            this.btnBack.Text = "BACK";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // questionNumberOfCorrectDataGridViewTextBoxColumn
+            // guna2PictureBox1
             // 
-            this.questionNumberOfCorrectDataGridViewTextBoxColumn.DataPropertyName = "questionNumberOfCorrect";
-            this.questionNumberOfCorrectDataGridViewTextBoxColumn.HeaderText = "Question Number Of Correct";
-            this.questionNumberOfCorrectDataGridViewTextBoxColumn.Name = "questionNumberOfCorrectDataGridViewTextBoxColumn";
+            this.guna2PictureBox1.BorderRadius = 15;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(620, 119);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(500, 500);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 3;
+            this.guna2PictureBox1.TabStop = false;
             // 
-            // questionTrueAnswerDataGridViewTextBoxColumn
+            // questionIDDataGridViewTextBoxColumn
             // 
-            this.questionTrueAnswerDataGridViewTextBoxColumn.DataPropertyName = "questionTrueAnswer";
-            this.questionTrueAnswerDataGridViewTextBoxColumn.HeaderText = "questionTrueAnswer";
-            this.questionTrueAnswerDataGridViewTextBoxColumn.Name = "questionTrueAnswerDataGridViewTextBoxColumn";
-            // 
-            // questionAnswerDDataGridViewTextBoxColumn
-            // 
-            this.questionAnswerDDataGridViewTextBoxColumn.DataPropertyName = "questionAnswerD";
-            this.questionAnswerDDataGridViewTextBoxColumn.HeaderText = "questionAnswerD";
-            this.questionAnswerDDataGridViewTextBoxColumn.Name = "questionAnswerDDataGridViewTextBoxColumn";
-            // 
-            // questionAnswerCDataGridViewTextBoxColumn
-            // 
-            this.questionAnswerCDataGridViewTextBoxColumn.DataPropertyName = "questionAnswerC";
-            this.questionAnswerCDataGridViewTextBoxColumn.HeaderText = "questionAnswerC";
-            this.questionAnswerCDataGridViewTextBoxColumn.Name = "questionAnswerCDataGridViewTextBoxColumn";
-            // 
-            // questionAnswerBDataGridViewTextBoxColumn
-            // 
-            this.questionAnswerBDataGridViewTextBoxColumn.DataPropertyName = "questionAnswerB";
-            this.questionAnswerBDataGridViewTextBoxColumn.HeaderText = "questionAnswerB";
-            this.questionAnswerBDataGridViewTextBoxColumn.Name = "questionAnswerBDataGridViewTextBoxColumn";
-            // 
-            // questionAnswerADataGridViewTextBoxColumn
-            // 
-            this.questionAnswerADataGridViewTextBoxColumn.DataPropertyName = "questionAnswerA";
-            this.questionAnswerADataGridViewTextBoxColumn.HeaderText = "questionAnswerA";
-            this.questionAnswerADataGridViewTextBoxColumn.Name = "questionAnswerADataGridViewTextBoxColumn";
-            // 
-            // questionMainSentenceDataGridViewTextBoxColumn
-            // 
-            this.questionMainSentenceDataGridViewTextBoxColumn.DataPropertyName = "questionMainSentence";
-            this.questionMainSentenceDataGridViewTextBoxColumn.HeaderText = "questionMainSentence";
-            this.questionMainSentenceDataGridViewTextBoxColumn.Name = "questionMainSentenceDataGridViewTextBoxColumn";
-            // 
-            // quetionImagePathDataGridViewTextBoxColumn
-            // 
-            this.quetionImagePathDataGridViewTextBoxColumn.DataPropertyName = "quetionImagePath";
-            this.quetionImagePathDataGridViewTextBoxColumn.HeaderText = "quetionImagePath";
-            this.quetionImagePathDataGridViewTextBoxColumn.Name = "quetionImagePathDataGridViewTextBoxColumn";
+            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "questionID";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.questionIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.questionIDDataGridViewTextBoxColumn.HeaderText = "Question ID";
+            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
+            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.questionIDDataGridViewTextBoxColumn.Width = 200;
             // 
             // questionTitleDataGridViewTextBoxColumn
             // 
             this.questionTitleDataGridViewTextBoxColumn.DataPropertyName = "questionTitle";
             this.questionTitleDataGridViewTextBoxColumn.HeaderText = "questionTitle";
             this.questionTitleDataGridViewTextBoxColumn.Name = "questionTitleDataGridViewTextBoxColumn";
+            this.questionTitleDataGridViewTextBoxColumn.Visible = false;
             // 
-            // questionIDDataGridViewTextBoxColumn
+            // quetionImagePathDataGridViewTextBoxColumn
             // 
-            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "questionID";
-            this.questionIDDataGridViewTextBoxColumn.HeaderText = "Question ID";
-            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
-            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.quetionImagePathDataGridViewTextBoxColumn.DataPropertyName = "quetionImagePath";
+            this.quetionImagePathDataGridViewTextBoxColumn.HeaderText = "quetionImagePath";
+            this.quetionImagePathDataGridViewTextBoxColumn.Name = "quetionImagePathDataGridViewTextBoxColumn";
+            this.quetionImagePathDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionMainSentenceDataGridViewTextBoxColumn
+            // 
+            this.questionMainSentenceDataGridViewTextBoxColumn.DataPropertyName = "questionMainSentence";
+            this.questionMainSentenceDataGridViewTextBoxColumn.HeaderText = "questionMainSentence";
+            this.questionMainSentenceDataGridViewTextBoxColumn.Name = "questionMainSentenceDataGridViewTextBoxColumn";
+            this.questionMainSentenceDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionAnswerADataGridViewTextBoxColumn
+            // 
+            this.questionAnswerADataGridViewTextBoxColumn.DataPropertyName = "questionAnswerA";
+            this.questionAnswerADataGridViewTextBoxColumn.HeaderText = "questionAnswerA";
+            this.questionAnswerADataGridViewTextBoxColumn.Name = "questionAnswerADataGridViewTextBoxColumn";
+            this.questionAnswerADataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionAnswerBDataGridViewTextBoxColumn
+            // 
+            this.questionAnswerBDataGridViewTextBoxColumn.DataPropertyName = "questionAnswerB";
+            this.questionAnswerBDataGridViewTextBoxColumn.HeaderText = "questionAnswerB";
+            this.questionAnswerBDataGridViewTextBoxColumn.Name = "questionAnswerBDataGridViewTextBoxColumn";
+            this.questionAnswerBDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionAnswerCDataGridViewTextBoxColumn
+            // 
+            this.questionAnswerCDataGridViewTextBoxColumn.DataPropertyName = "questionAnswerC";
+            this.questionAnswerCDataGridViewTextBoxColumn.HeaderText = "questionAnswerC";
+            this.questionAnswerCDataGridViewTextBoxColumn.Name = "questionAnswerCDataGridViewTextBoxColumn";
+            this.questionAnswerCDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionAnswerDDataGridViewTextBoxColumn
+            // 
+            this.questionAnswerDDataGridViewTextBoxColumn.DataPropertyName = "questionAnswerD";
+            this.questionAnswerDDataGridViewTextBoxColumn.HeaderText = "questionAnswerD";
+            this.questionAnswerDDataGridViewTextBoxColumn.Name = "questionAnswerDDataGridViewTextBoxColumn";
+            this.questionAnswerDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionTrueAnswerDataGridViewTextBoxColumn
+            // 
+            this.questionTrueAnswerDataGridViewTextBoxColumn.DataPropertyName = "questionTrueAnswer";
+            this.questionTrueAnswerDataGridViewTextBoxColumn.HeaderText = "questionTrueAnswer";
+            this.questionTrueAnswerDataGridViewTextBoxColumn.Name = "questionTrueAnswerDataGridViewTextBoxColumn";
+            this.questionTrueAnswerDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionNumberOfCorrectDataGridViewTextBoxColumn
+            // 
+            this.questionNumberOfCorrectDataGridViewTextBoxColumn.DataPropertyName = "questionNumberOfCorrect";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.questionNumberOfCorrectDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.questionNumberOfCorrectDataGridViewTextBoxColumn.HeaderText = "Question Number Of Correct";
+            this.questionNumberOfCorrectDataGridViewTextBoxColumn.Name = "questionNumberOfCorrectDataGridViewTextBoxColumn";
+            this.questionNumberOfCorrectDataGridViewTextBoxColumn.Width = 215;
+            // 
+            // questionViewDataGridViewTextBoxColumn
+            // 
+            this.questionViewDataGridViewTextBoxColumn.DataPropertyName = "questionView";
+            this.questionViewDataGridViewTextBoxColumn.HeaderText = "questionView";
+            this.questionViewDataGridViewTextBoxColumn.Name = "questionViewDataGridViewTextBoxColumn";
+            this.questionViewDataGridViewTextBoxColumn.Visible = false;
             // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
             this.ClientSize = new System.Drawing.Size(1280, 853);
             this.ControlBox = false;
+            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
@@ -209,6 +267,7 @@ namespace _6sigmaileProje
             ((System.ComponentModel.ISupportInitialize)(this.questionsBindingSource)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.questionDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,6 +283,8 @@ namespace _6sigmaileProje
         private _6SigmaDataSet3TableAdapters.questionsTableAdapter questionsTableAdapter;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.DataGridView questionDataGrid;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionTitleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quetionImagePathDataGridViewTextBoxColumn;
