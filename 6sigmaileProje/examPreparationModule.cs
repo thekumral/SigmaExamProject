@@ -26,7 +26,7 @@ namespace _6sigmaileProje
         private void btnAddQuestion_Click(object sender, EventArgs e)
         {
             //Sql ile Soruları Kaydetme fonksiyonu
-            questionSave.questionSaves(rTextTitleForQuestion, rTextboxImageFilePath, rTextbxMainQuestion, rTextbxAnwerA, rTextbxAnwerB, rTextbxAnwerC, rTextbxAnwerD, rTextbxTrueAnswer);
+            questionSave.questionSaves(rTextBoxSubject,rTextTitleForQuestion, rTextboxImageFilePath, rTextbxMainQuestion, rTextbxAnwerA, rTextbxAnwerB, rTextbxAnwerC, rTextbxAnwerD, rTextbxTrueAnswer);
 
         }
 
@@ -53,6 +53,9 @@ namespace _6sigmaileProje
             this.Hide();
         }
 
-        
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

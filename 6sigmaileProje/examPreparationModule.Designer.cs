@@ -57,8 +57,8 @@ namespace _6sigmaileProje
             this.label9 = new System.Windows.Forms.Label();
             this.rTextbxTrueAnswer = new System.Windows.Forms.RichTextBox();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.rTextBoxSubject = new System.Windows.Forms.RichTextBox();
+            this.lblQuestionSubject = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxModule)).BeginInit();
             this.SuspendLayout();
@@ -118,6 +118,8 @@ namespace _6sigmaileProje
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
+            this.guna2Panel1.Controls.Add(this.lblQuestionSubject);
+            this.guna2Panel1.Controls.Add(this.rTextBoxSubject);
             this.guna2Panel1.Controls.Add(this.rTextboxImageFilePath);
             this.guna2Panel1.Controls.Add(this.pathImage);
             this.guna2Panel1.Controls.Add(this.btnChoose);
@@ -133,6 +135,7 @@ namespace _6sigmaileProje
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(804, 853);
             this.guna2Panel1.TabIndex = 5;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // rTextboxImageFilePath
             // 
@@ -323,9 +326,9 @@ namespace _6sigmaileProje
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
-            this.label9.Location = new System.Drawing.Point(1185, 573);
+            this.label9.Location = new System.Drawing.Point(1060, 571);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 18);
+            this.label9.Size = new System.Drawing.Size(96, 21);
             this.label9.TabIndex = 16;
             this.label9.Text = "True Answer";
             // 
@@ -333,7 +336,7 @@ namespace _6sigmaileProje
             // 
             this.rTextbxTrueAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rTextbxTrueAnswer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
-            this.rTextbxTrueAnswer.Location = new System.Drawing.Point(1287, 553);
+            this.rTextbxTrueAnswer.Location = new System.Drawing.Point(1162, 551);
             this.rTextbxTrueAnswer.Name = "rTextbxTrueAnswer";
             this.rTextbxTrueAnswer.Size = new System.Drawing.Size(78, 46);
             this.rTextbxTrueAnswer.TabIndex = 17;
@@ -357,39 +360,26 @@ namespace _6sigmaileProje
             this.btnBack.Text = "back";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
-            // label10
+            // rTextBoxSubject
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
-            this.label10.Location = new System.Drawing.Point(907, 575);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(106, 20);
-            this.label10.TabIndex = 40;
-            this.label10.Text = "Question Unit";
+            this.rTextBoxSubject.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rTextBoxSubject.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rTextBoxSubject.Location = new System.Drawing.Point(192, 83);
+            this.rTextBoxSubject.Name = "rTextBoxSubject";
+            this.rTextBoxSubject.Size = new System.Drawing.Size(544, 60);
+            this.rTextBoxSubject.TabIndex = 43;
+            this.rTextBoxSubject.Text = "";
             // 
-            // guna2ComboBox1
+            // lblQuestionSubject
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "1. Unit",
-            "2. Unit",
-            "3. Unit",
-            "4. Unit",
-            "5. Unit",
-            "6. Unit",
-            "7. Unit"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(1019, 563);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox1.TabIndex = 41;
+            this.lblQuestionSubject.AutoSize = true;
+            this.lblQuestionSubject.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblQuestionSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(19)))), ((int)(((byte)(60)))));
+            this.lblQuestionSubject.Location = new System.Drawing.Point(32, 101);
+            this.lblQuestionSubject.Name = "lblQuestionSubject";
+            this.lblQuestionSubject.Size = new System.Drawing.Size(143, 21);
+            this.lblQuestionSubject.TabIndex = 44;
+            this.lblQuestionSubject.Text = "Question Subject";
             // 
             // examPreparationModule
             // 
@@ -398,8 +388,6 @@ namespace _6sigmaileProje
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(119)))), ((int)(((byte)(123)))));
             this.ClientSize = new System.Drawing.Size(1608, 853);
             this.ControlBox = false;
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.rTextbxTrueAnswer);
             this.Controls.Add(this.label9);
@@ -456,8 +444,8 @@ namespace _6sigmaileProje
         private System.Windows.Forms.Label pathImage;
         private System.Windows.Forms.RichTextBox rTextbxTrueAnswer;
         private Guna.UI2.WinForms.Guna2Button btnBack;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox rTextboxImageFilePath;
+        private System.Windows.Forms.Label lblQuestionSubject;
+        private System.Windows.Forms.RichTextBox rTextBoxSubject;
     }
 }
